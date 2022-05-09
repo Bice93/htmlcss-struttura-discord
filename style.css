@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,13 +55,11 @@ a{
     border: 1px dashed black;
 }
 
-.section2{
-    display: flex;
-    flex-direction: column;
+.subsection2{
+    padding: 20px;
 }
 
-.subsection .box{
-    padding: 20px;
+.subsection2 > .box{
     width: 700px;
     height: 200px;
     margin: auto;
@@ -70,23 +68,22 @@ a{
 
 .boxsx{
     flex-grow: 2;
-    background-color: aqua;
+    background-color: rgb(46, 234, 234);
     border: 1px dashed black;
 }
 
 .boxdx{
     flex-grow: 1;
-    background-color: aquamarine;
+    background-color: pink;
     border: 1px dashed black;
 }
 
-.subsection-underline{
-    background-color:rgb(176, 175, 175);   
-    display: flex;
+.underline{
+    background-color:rgb(176, 175, 175); 
+    padding: 20px;
 }
 
-.subsection-underline .box{
-    padding: 20px;
+.underline > .box{
     display: flex;
     flex-direction: row-reverse;
     width: 700px;
@@ -121,14 +118,14 @@ a{
     display: flex;
 }
 
-.box > .boxsx{
+.section4 > .box > .boxsx{
     border: 1px dashed black;
-    flex-grow: 2;
+    flex-grow: 1;
     background-color: rgb(235, 142, 158);
 }
 
-.box > .boxdx{
-    flex-grow: 4;
+.section4 > .box > .boxdx{
+    flex-grow: 2;
     background-color: rgb(5, 169, 156);
     display: flex;
 }
@@ -140,6 +137,7 @@ a{
 
 footer{
     background-color: black;
+    padding: 20px;
     border-top: 1px solid white;
 }
 
